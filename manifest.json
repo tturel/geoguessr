@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "GeoGuessr Location Overlay",
+  "version": "2.0", // Major version bump for significant change
+  "description": "Displays the current GeoGuessr location in a map overlay using Leaflet/CARTO within Shadow DOM.", // Updated description
+  "permissions": [
+    "scripting",
+    "storage" // Added for storing random IDs if needed, though not strictly necessary now
+  ],
+  "host_permissions": [
+    "https://www.geoguessr.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.geoguessr.com/*"],
+      // CSS wordt nu IN de Shadow DOM geladen, dus niet meer hier
+      "js": ["leaflet/leaflet.js", "content.js"], // Leaflet eerst
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "injector.js",
+        "leaflet/leaflet.css", // CSS moet toegankelijk zijn om te fetchen
+        "leaflet/images/*"
+       ],
+      "matches": ["https://www.geoguessr.com/*"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
