@@ -3,6 +3,7 @@
 </p>
 
 # GeoGuessr Location Overlay 🗺️
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **A stealthy, open-source Chrome extension that reveals your real in-game coordinates on GeoGuessr — safely, instantly, and undetectably.**  
 Use it to learn. Or use it to win. Your call.
