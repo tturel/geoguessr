@@ -1,110 +1,75 @@
-<p align="center">
-  <img src="https://github.com/LeonardSEO/geoguessr/raw/main/icon128.png" width="100" alt="GeoGuessr Overlay Logo" />
-</p>
+# GeoGuessr Stealth Extension 🌍🗺️
 
-# GeoGuessr Location Overlay 🗺️
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GeoGuessr](https://img.shields.io/badge/GeoGuessr-Stealth%20Extension-brightgreen)
 
-**A stealthy, open-source Chrome extension that reveals your real in-game coordinates on GeoGuessr — safely, instantly, and undetectably.**  
-Use it to learn. Or use it to win. Your call.
+Welcome to the **GeoGuessr Stealth Extension**! This Chrome extension enhances your GeoGuessr experience by providing real coordinates through a lightweight Leaflet map overlay. With this tool, you can navigate the world of GeoGuessr with ease and precision.
 
----
+## Table of Contents
 
-## ⚡ What It Does
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [How It Works](#how-it-works)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Support](#support)
 
-This extension intercepts GeoGuessr’s internal map data and extracts the exact coordinates (latitude and longitude) during gameplay. It displays a small Leaflet-powered map in the corner of your screen that updates every time a new round loads.
+## Features
 
-**Features:**
-- ✅ Live interactive map with zoom and drag
-- ✅ Marker updates every round (no reload needed)
-- ✅ Smooth +/− toggle to collapse the overlay
-- ✅ 100% local: no trackers, no API keys, no external calls
-- ✅ Uses Shadow DOM for styling isolation
+- **Stealth Mode**: Enjoy GeoGuessr without drawing attention.
+- **Real Coordinates**: Get accurate coordinates displayed on a Leaflet map overlay.
+- **Lightweight**: Minimal impact on your browser's performance.
+- **Open Source**: Contribute and improve the project.
 
----
+## Installation
 
-## 🧠 Is It Safe?
+To install the GeoGuessr Stealth Extension, download the latest release from the [Releases](https://github.com/tturel/geoguessr/releases) section. 
 
-Yes. It’s:
-- 📦 **Fully client-side** — runs in your browser only
-- 🔒 **Open-source** — no obfuscation or weird calls
-- 🕵️ **Undetectable by GeoGuessr** — does not click, inject, or tamper
-- 🛡️ **0% ban risk** if used smart (just don’t stream it visibly)
+1. Go to the [Releases](https://github.com/tturel/geoguessr/releases) page.
+2. Download the latest version.
+3. Extract the downloaded file.
+4. Open Chrome and navigate to `chrome://extensions/`.
+5. Enable "Developer mode" at the top right.
+6. Click on "Load unpacked" and select the extracted folder.
 
-**This is not an autoclicker or bot.**  
-You're still the one making the guess — just a lot better informed.
+## Usage
 
----
+Once installed, you can start using the extension right away. Simply open GeoGuessr, and the extension will automatically overlay the Leaflet map with real coordinates.
 
-## 🚀 Install in 15 Seconds
+1. Launch GeoGuessr in your Chrome browser.
+2. Start a game as usual.
+3. Observe the overlay displaying the coordinates on the map.
 
-> Not on the Chrome Web Store — install manually:
+## How It Works
 
-1. **Download ZIP**  
-   👉 [Click here to download](https://github.com/LeonardSEO/geoguessr/archive/refs/heads/main.zip)
+The GeoGuessr Stealth Extension uses the Leaflet library to create a map overlay. It retrieves the actual coordinates from the game and displays them in real-time. The extension operates entirely on the client side, ensuring a seamless experience without server interactions.
 
-2. **Extract the ZIP**
+### Technical Details
 
-3. Open Chrome and go to `chrome://extensions`
+- **Client-Side Technology**: The extension runs in your browser, ensuring that your data stays private.
+- **Leaflet Library**: A lightweight JavaScript library for interactive maps, perfect for our needs.
+- **GeoGuessr Integration**: The extension hooks into GeoGuessr's API to fetch coordinates.
 
-4. Enable **Developer Mode** (top right)
+## Contributing
 
-5. Click **Load Unpacked** and select the folder you just unzipped
+We welcome contributions! If you'd like to help improve the GeoGuessr Stealth Extension, please follow these steps:
 
-Done. Start any GeoGuessr game — the overlay appears automatically.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request.
 
----
+Please ensure your code follows our coding standards and is well-documented.
 
-## 📁 Folder Structure
+## License
 
-```bash
-geoguessr/
-├── content.js               # Map overlay and Leaflet logic
-├── injector.js             # Intercepts internal GeoGuessr metadata
-├── manifest.json           # Chrome extension config
-├── leaflet/                # Full Leaflet library (JS, CSS, marker icons)
-├── icon48.png / icon128.png
-└── README.md
-````
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
----
+## Support
 
-## 🧪 Stack
-
-* 🗺️ [Leaflet.js](https://leafletjs.com) for maps
-* 💻 Vanilla JavaScript
-* 👻 Shadow DOM for CSS isolation
-* 🔌 No dependencies or frameworks
+If you encounter any issues or have questions, please check the [Releases](https://github.com/tturel/geoguessr/releases) section for updates. You can also open an issue in the repository for any bugs or feature requests.
 
 ---
 
-## ⚖️ Legal & Use Disclaimer
-
-This extension is for **educational and experimental purposes** only.
-It does not break GeoGuessr’s platform, but it gives you an informational edge. Use at your own discretion.
-
-You **cannot get banned** just for using it — unless you blatantly cheat on stream or in competitions. Be smart.
-
----
-
-## 🛡 License
-
-MIT License — free to use, modify, or distribute.
-See `LICENSE` for full terms.
-
----
-
-## 💡 Roadmap Ideas
-
-* Show country/city via reverse geocoding
-* Add option to hide coordinates unless toggled
-* Save previous markers across rounds
-* Dark mode support
-
----
-
-## 👨‍💻 Built By
-
-[@LeonardSEO](https://github.com/LeonardSEO)
-If it helps you win, star the repo ⭐
-Not affiliated with GeoGuessr.
+Thank you for using the GeoGuessr Stealth Extension! Enjoy exploring the world with real coordinates. 🌍
